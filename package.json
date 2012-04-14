@@ -1,0 +1,39 @@
+{
+	"name"           : "connect-cors",
+	"description"    : "Cross-Origin Resource Sharing (CORS) middleware for connect. Got an API implemented on top of node.js? Use CORS to allow JavaScript access to your API from any domain!",
+	"version"        : "0.0.1",
+	"keywords"       : ["util", "functional", "browser", "CORS", "origin", "policy"],
+	"homepage"       : "http://github.com/SDA/connect-cors",
+	"author"         : "Sasa Djolic <sasa.djolic@sdaworld.com>",
+	"maintainers"    : [{
+		"name"       : "Sasa Djolic",
+		"email"      : "sasa.djolic@sdaworld.com",
+		"web"        : "http://www.sasadjolic.com"
+	}],
+	"contributors"   : [{
+		"name"       : "Sasa Djolic",
+		"email"      : "sasa.djolic@sdaworld.com",
+		"web"        : "http://www.sasadjolic.com"
+	}],
+	"bugs"           : { "url": "http://github.com/SDA/connect-cors/issues" },
+	"licenses"       : [{ "type": "MIT", "url": "https://raw.github.com/SDA/connect-cors/master/LICENSE" }],
+	"repositories"   : [{ "type": "git", "url": "http://github.com/SDA/connect-cors" }],
+	"scripts"        : {
+		"build"      : "node build/build.js",
+		"test"       : "node test/test.js"
+	},
+	"directories"    : {
+		"lib"        : "lib"
+	},
+	"devDependencies": {
+		"assert"     : "0.4.x",
+		"connect"    : "2.1.x",
+		"request"    : "2.9.x",
+		"seq"        : "0.3.x"
+	},
+	"dependencies"   : {
+	},
+	"engines"        : {
+		"node"       : "0.6.x"
+	}
+}

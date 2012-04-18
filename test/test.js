@@ -35,7 +35,8 @@ seq()
 			assert(response.headers['access-control-allow-methods'] === 'POST, GET, PUT, DELETE, OPTIONS');
 			assert(response.headers['access-control-allow-credentials'] === 'true');
 			assert(response.headers['access-control-max-age'] === '86400');
-			assert(response.headers['access-control-allow-headers'] == 'Accept, Authorization, Content-Type, Origin, X-API-Version, X-HTTP-Method-Override, X-Requested-With');
+			assert(response.headers['access-control-allow-headers'] == 'Accept, Authorization, Content-Type, ETag, Origin, X-API-Version, X-HTTP-Method-Override, X-Requested-With');
+			assert(response.headers['access-control-expose-headers'] == 'Accept, Authorization, Content-Type, ETag, Origin, X-API-Version, X-HTTP-Method-Override, X-Requested-With');
 		}
 		catch (e) {
 			console.log(e);
@@ -51,7 +52,8 @@ seq()
 			assert(response.headers['access-control-allow-methods'] === 'POST, GET, PUT, DELETE, OPTIONS');
 			assert(response.headers['access-control-allow-credentials'] === 'true');
 			assert(response.headers['access-control-max-age'] === '86400');
-			assert(response.headers['access-control-allow-headers'] == 'Accept, Authorization, Content-Type, Origin, X-API-Version, X-HTTP-Method-Override, X-Requested-With');
+			assert(response.headers['access-control-allow-headers'] == 'Accept, Authorization, Content-Type, ETag, Origin, X-API-Version, X-HTTP-Method-Override, X-Requested-With');
+			assert(response.headers['access-control-expose-headers'] == 'Accept, Authorization, Content-Type, ETag, Origin, X-API-Version, X-HTTP-Method-Override, X-Requested-With');
 		}
 		catch (e) {
 			console.log(e);
